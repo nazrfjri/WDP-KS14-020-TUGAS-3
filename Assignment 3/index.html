@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap">
+    <title>WDP-KS14-020 | Tugas 3</title>
+</head>
+<body>
+    <!-- navbar (add-on) -->
+    <nav>
+        <ul>
+        <li><a href="#">HOME</a></li>
+        <li><a href="#">TRACKER</a></li>
+        <li><a href="#">HELP</a></li>
+        <li><a href="#">SETTINGS</a></li>
+        </ul>
+    </nav>
+
+    <!-- content -->
+    <div class="box">
+        <div class="box2">
+        <h1 class="title1">COVID-19 TRACKER</h1>
+        <form class="form-box">
+            <div class="form-box2">
+            <input id="searchInput" type="text" name="name" placeholder="Input countries">
+            <button id="searchButton" type="button"><b>Search</b></button>
+            <a href="index.html"><button id="resetButton" type="button"><b>Reset</b></button></a>
+            </div>
+        </form>
+
+        <div class="card">
+            <div id="card-container"></div>
+            <div id="card-template" style="display: none;">
+            <h3 class="title2">Result on {{country}}</h3>
+            <span>{{day}}</span><br><br>
+            <div class="card-layer">
+                <div class="card-layer2">
+                    <img class="card-pic" src="img/activecase.png">
+                    <h3 class="title3">Active Cases</h3>
+                    <span>{{activeCases}}</span>
+                </div>
+
+                <div class="card-layer2">
+                    <img class="card-pic" src="img/newcase.png">
+                    <h3 class="title3">New Cases</h3>
+                    <span>{{newCases}}</span>
+                </div>
+                
+                <div class="card-layer2">
+                    <img class="card-pic" src="img/recovered.png">
+                    <h3 class="title3">Recovered Cases</h3>
+                    <span>{{recoveredCases}}</span>
+                </div>
+
+                <div class="card-layer2">
+                    <img class="card-pic" src="img/totalcase.png">
+                    <h3 class="title3">Total Cases</h3>
+                    <span>{{totalCases}}</span>
+                </div>
+
+                <div class="card-layer2">
+                    <img class="card-pic" src="img/death.png">
+                    <h3 class="title3">Total Deaths</h3>
+                    <span>{{totalDeaths}}</span>
+                </div>
+            
+                <div class="card-layer2">
+                    <img class="card-pic" src="img/totaltest.png">
+                    <h3 class="title3">Total Tests</h3>
+                    <span>{{totalTests}}</span>
+                </div>
+
+            </div>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <!-- footer (add-on) -->
+    <footer class="footer">
+        <div class="footer-left">
+        <p>Copyright &copy; C19 Operation All rights reserved.</p>
+        </div>
+        <div class="footer-right">
+        <p>Developed By Eka Nazar Fajriansyah</p>
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>
